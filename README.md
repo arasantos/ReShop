@@ -11,7 +11,7 @@ ReShop is an online thrift store app designed to simplify the buying and selling
 3. In Android Studio, click the green play button in the top right corner to build and run the project.
 
 ## Important links
-- [ARCHITECTURE.md](https://code.cs.umanitoba.ca/comp3350s24/a01-g04-reshop/-/blob/develop/ARCHITECTURE.md?ref_type=heads): This document displays the 3-tier architecture diagram and describes the purpose of each class used in the project.
-- [RETROSPECTIVE.md](https://code.cs.umanitoba.ca/comp3350s24/a01-g04-reshop/-/blob/develop/RETROSPECTIVE.md?ref_type=heads): This document describes the group's reflection based on the feedback of Iteration 2.
-- [VISION.md](https://code.cs.umanitoba.ca/comp3350s24/a01-g04-reshop/-/blob/develop/VISION.md?ref_type=heads): This document showcase the app's overall vision statement and its features.
-- [ReShop Website](https://code.cs.umanitoba.ca/comp3350s24/a01-g04-reshop/-/tree/develop/website?ref_type=heads): This is the app's website.
+- [ARCHITECTURE.md](https://github.com/arasantos/ReShop/blob/main/Documentation/ARCHITECTURE.md): This document displays the 3-tier architecture diagram and describes the purpose of each class used in the project.
+- [RETROSPECTIVE.md](https://github.com/arasantos/ReShop/blob/main/Documentation/RETROSPECTIVE.md): This document describes the group's reflection based on the feedback of Iteration 2.
+- [VISION.md](https://github.com/arasantos/ReShop/blob/main/Documentation/VISION.md): This document showcase the app's overall vision statement and its features.
+- [ReShop Website](https://github.com/arasantos/ReShop/tree/main/website): This is the app's website.
