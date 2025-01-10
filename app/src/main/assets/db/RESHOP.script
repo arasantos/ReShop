@@ -1,0 +1,21 @@
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+CREATE MEMORY TABLE PUBLIC.USERS(USERNAME VARCHAR(30) PRIMARY KEY NOT NULL CHECK(LENGTH(USERNAME) > 0),PASSWORD VARCHAR(20) NOT NULL CHECK(LENGTH(PASSWORD) > 0),FIRSTNAME VARCHAR(20) NOT NULL CHECK(LENGTH(FIRSTNAME) > 0),LASTNAME VARCHAR(20) NOT NULL CHECK(LENGTH(LASTNAME) > 0),CITY VARCHAR(100) NOT NULL CHECK(LENGTH(CITY) > 0))
+CREATE MEMORY TABLE PUBLIC.CLOTHINGITEMS(ITEMID INTEGER PRIMARY KEY NOT NULL,ITEMNAME VARCHAR(100) CHECK(LENGTH(ITEMNAME) > 0),DESCRIPTION VARCHAR(500),LOCATION VARCHAR(100) NOT NULL CHECK(LENGTH(LOCATION) > 0),TYPE VARCHAR(50) NOT NULL CHECK(LENGTH(TYPE) > 0),STYLE VARCHAR(50) NOT NULL CHECK(LENGTH(STYLE) > 0),QUALITY VARCHAR(50) NOT NULL CHECK(LENGTH(QUALITY) > 0),PRICE INTEGER CHECK(PRICE >= 0),IMAGEURI VARCHAR(255),SELLER VARCHAR(30),BUYER VARCHAR(30),FOREIGN KEY (SELLER) REFERENCES USERS(USERNAME) ON DELETE CASCADE,FOREIGN KEY (BUYER) REFERENCES USERS(USERNAME) ON DELETE SET NULL)
+CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
+ALTER USER SA SET LOCAL TRUE
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+SET DATABASE DEFAULT INITIAL SCHEMA PUBLIC
+GRANT DBA TO SA
+SET WRITE_DELAY 20
+SET FILES SCALE 32
+SET SCHEMA PUBLIC
+INSERT INTO USERS VALUES('daviest','password','Tristan','Davies','Winnipeg')
+INSERT INTO USERS VALUES('hongj','password','Jordon','Hong','Winnipeg')
+INSERT INTO USERS VALUES('sunh','password','Han','Sun','Winnipeg')
+INSERT INTO USERS VALUES('thakkard','password','Dhvani','Thakkar','Winnipeg')
+INSERT INTO USERS VALUES('santosa','password','Ara Nicole','Santos','Winnipeg')
+INSERT INTO CLOTHINGITEMS VALUES (1, 'A T-Shirt', 'Comfortable cotton t-shirt', 'Brandon', 'Crop Top', 'Vintage', 'Like New', 1999, 'android.resource://comp3350.reshop/drawable/item_converse1', 'daviest', NULL)
+INSERT INTO CLOTHINGITEMS VALUES (2, 'B Jacket t-shirt', 'Warm winter jacket', 'Selkirk', 'Jacket', 'Preppy', 'Like New', 3999, 'android.resource://comp3350.reshop/drawable/item_converse2', 'thakkard', NULL)
+INSERT INTO CLOTHINGITEMS VALUES (3, 'C Sweater', 'Cozy wool sweater', 'Winkler', 'T-shirt', 'Preppy', 'New without Tags', 2999, 'android.resource://comp3350.reshop/drawable/item_converse3', 'hongj', NULL)
+INSERT INTO CLOTHINGITEMS VALUES (4, 'D Raincoat', 'Waterproof raincoat', 'Winnipeg', 'Pants', 'Vintage', 'Used - Fair', 4999, 'android.resource://comp3350.reshop/drawable/item_converse4', 'sunh', NULL)
+INSERT INTO CLOTHINGITEMS VALUES (5, 'E Shorts', 'Comfortable cotton shorts', 'Brandon', 'Pyjamas', 'Minimalist', 'Used - Good', 910, 'android.resource://comp3350.reshop/drawable/item_navy_pants', 'santosa', NULL)

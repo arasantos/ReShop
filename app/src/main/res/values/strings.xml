@@ -1,0 +1,130 @@
+<resources>
+    <!--  Page Headers  -->
+    <string name="app_name">ReShop</string>
+    <string name="login_page_title">Welcome to ReShop</string>
+    <string name="home_page_title">Browse Items</string>
+    <string name="post_creator_page_title">Sell your item</string>
+    <string name="checkout_page_title">Checkout</string>
+
+    <string name="password_prompt">Password</string>
+    <string name="username_prompt">Username</string>
+    <string name="create_account_prompt">Create a new account</string>
+    <string name="login_btn_title">Login</string>
+
+    <string name="create_account_fn_prompt">First Name</string>
+    <string name="create_account_ln_prompt">Last Name</string>
+
+    <string name="describe_your_item_here">Describe your item here</string>
+    <string name="quality">Quality</string>
+    <string name="style">Style</string>
+    <string name="type">Type</string>
+    <string name="cancel">Cancel</string>
+    <string name="sell">Sell</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="upload_images_here">Upload your image here</string>
+    <string name="image_of_item">Image of item</string>
+    <string name="enter_your_price_here">Enter your price here</string>
+    <string name="enter_your_item_name">Enter your item\'s name</string>
+    <string name="name">Item Name</string>
+    <string name="location_icon">𖡡</string>
+    <string name="x">x</string>
+
+    <string-array name="location_dropdown_options">
+        <item>Please select a location</item>
+        <item>Brandon</item>
+        <item>Selkirk</item>
+        <item>Steinbach</item>
+        <item>Winkler</item>
+        <item>Winnipeg</item>
+        <item>Flin Flon</item>
+    </string-array>
+
+    <!--  Sort titles  -->
+    <string name="sort_title">Sort by</string>
+
+    <string-array name="sort_dropdown_options">
+        <item>Please select your sort option</item>
+        <item>Price: Low to High</item>
+        <item>Price: High to Low</item>
+        <item>Item Quality: Used to New</item>
+        <item>Item Quality: New to Used</item>
+    </string-array>
+
+    <!--  Filter titles  -->
+    <string name="filter_title">Filters</string>
+    <string name="price_range">Price Range: </string>
+    <string name="min_price"> Min: </string>
+    <string name="max_price"> Max: </string>
+    <string name="item_types">Item Types:</string>
+
+    <string-array name="type_dropdown_options">
+        <item>Please select the clothing type</item>
+        <item>Shoes</item>
+        <item>T-shirt</item>
+        <item>Pants</item>
+        <item>Sandals</item>
+        <item>Hoodie</item>
+        <item>Jacket</item>
+        <item>Pyjamas</item>
+        <item>Crop Top</item>
+        <item>Polo Shirts</item>
+        <item>Shorts</item>
+    </string-array>
+
+    <string-array name="quality_dropdown_options">
+        <item>Please select the clothing quality</item>
+        <item>New with Tags</item>
+        <item>New without Tags</item>
+        <item>Like New</item>
+        <item>Used - Excellent</item>
+        <item>Used - Good</item>
+        <item>Used - Fair</item>
+    </string-array>
+
+    <string-array name="style_dropdown_options">
+        <item>Please select the clothing style</item>
+        <item>Vintage</item>
+        <item>Streetwear</item>
+        <item>Minimalist</item>
+        <item>Athleisure</item>
+        <item>Preppy</item>
+    </string-array>
+
+    <string name="account_editor_page_header">Edit your account</string>
+    <string name="save_data">Save</string>
+    <string name="listings">Listings</string>
+    <string name="bought_items">Bought Items</string>
+    <string name="logout">Logout</string>
+    <string name="edit">Edit</string>
+
+    <!--  Bottom Navigation  -->
+    <string name="bottom_navigation_home">Home</string>
+    <string name="bottom_navigation_sell">Sell</string>
+    <string name="bottom_navigation_account">Account</string>
+
+    <!-- Checkout -->
+    <string name="buy">Buy</string>
+    <string name="card_number">Card Number</string>
+    <string name="cardNumberHint">5234 1234 1234 1234</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="john_doe">John Doe</string>
+    <string name="name_on_card">Name on Card</string>
+    <string name="address">Address</string>
+    <string name="address_hint">123–45678 Somewhere Street</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="canada">Canada</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="postal_code_hint">A0A 0A0</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_number_hint">1234567890</string>
+    <string name="cvv">CVV</string>
+    <string name="cvv_hint">123</string>
+
+<!-- Error messages -->
+    <string name="error_price_filter">Please input a valid price range.</string>
+
+</resources>

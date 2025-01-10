@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_action_none"
+        android:title=""
+        android:enabled="false"
+        android:visible="false"/>
+    <item
+        android:id="@+id/nav_action_home"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/bottom_navigation_home" />
+    <item
+        android:id="@+id/nav_action_sell"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/bottom_navigation_sell" />
+    <item
+        android:id="@+id/nav_action_account"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="@string/bottom_navigation_account" />
+</menu>
